@@ -21,6 +21,8 @@
 		BF250B7D1837D7A10003C35E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF250B5F1837D7A10003C35E /* UIKit.framework */; };
 		BF250B851837D7A10003C35E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF250B831837D7A10003C35E /* InfoPlist.strings */; };
 		BF250B871837D7A10003C35E /* PoseidonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF250B861837D7A10003C35E /* PoseidonTests.m */; };
+		BF250B911837D7C40003C35E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF250B901837D7C40003C35E /* MapKit.framework */; };
+		BF250B941837DB690003C35E /* parkingSpot.m in Sources */ = {isa = PBXBuildFile; fileRef = BF250B931837DB690003C35E /* parkingSpot.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		BF250B821837D7A10003C35E /* PoseidonTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PoseidonTests-Info.plist"; sourceTree = "<group>"; };
 		BF250B841837D7A10003C35E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BF250B861837D7A10003C35E /* PoseidonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PoseidonTests.m; sourceTree = "<group>"; };
+		BF250B901837D7C40003C35E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		BF250B921837DB690003C35E /* parkingSpot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parkingSpot.h; sourceTree = "<group>"; };
+		BF250B931837DB690003C35E /* parkingSpot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = parkingSpot.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF250B911837D7C40003C35E /* MapKit.framework in Frameworks */,
 				BF250B5E1837D7A10003C35E /* CoreGraphics.framework in Frameworks */,
 				BF250B601837D7A10003C35E /* UIKit.framework in Frameworks */,
 				BF250B5C1837D7A10003C35E /* Foundation.framework in Frameworks */,
@@ -101,6 +107,7 @@
 		BF250B5A1837D7A10003C35E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BF250B901837D7C40003C35E /* MapKit.framework */,
 				BF250B5B1837D7A10003C35E /* Foundation.framework */,
 				BF250B5D1837D7A10003C35E /* CoreGraphics.framework */,
 				BF250B5F1837D7A10003C35E /* UIKit.framework */,
@@ -115,6 +122,8 @@
 				BF250B6A1837D7A10003C35E /* ParkAppDelegate.h */,
 				BF250B6B1837D7A10003C35E /* ParkAppDelegate.m */,
 				BF250B6D1837D7A10003C35E /* Main.storyboard */,
+				BF250B921837DB690003C35E /* parkingSpot.h */,
+				BF250B931837DB690003C35E /* parkingSpot.m */,
 				BF250B701837D7A10003C35E /* ParkViewController.h */,
 				BF250B711837D7A10003C35E /* ParkViewController.m */,
 				BF250B731837D7A10003C35E /* Images.xcassets */,
@@ -252,6 +261,7 @@
 			files = (
 				BF250B6C1837D7A10003C35E /* ParkAppDelegate.m in Sources */,
 				BF250B681837D7A10003C35E /* main.m in Sources */,
+				BF250B941837DB690003C35E /* parkingSpot.m in Sources */,
 				BF250B721837D7A10003C35E /* ParkViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
