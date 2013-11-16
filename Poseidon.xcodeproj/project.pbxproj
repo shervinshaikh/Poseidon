@@ -25,6 +25,7 @@
 		BF250B941837DB690003C35E /* parkingSpot.m in Sources */ = {isa = PBXBuildFile; fileRef = BF250B931837DB690003C35E /* parkingSpot.m */; };
 		BF250B971837EB710003C35E /* SpotView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF250B961837EB710003C35E /* SpotView.m */; };
 		BF250B991837EBE70003C35E /* spotView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF250B981837EBE70003C35E /* spotView.xib */; };
+		BF250BA11838125C0003C35E /* car-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BF250BA01838125C0003C35E /* car-icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		BF250B951837EB710003C35E /* SpotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpotView.h; sourceTree = "<group>"; };
 		BF250B961837EB710003C35E /* SpotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpotView.m; sourceTree = "<group>"; };
 		BF250B981837EBE70003C35E /* spotView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = spotView.xib; sourceTree = "<group>"; };
+		BF250BA01838125C0003C35E /* car-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car-icon.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 		BF250B621837D7A10003C35E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BF250BA01838125C0003C35E /* car-icon.png */,
 				BF250B631837D7A10003C35E /* Poseidon-Info.plist */,
 				BF250B641837D7A10003C35E /* InfoPlist.strings */,
 				BF250B671837D7A10003C35E /* main.m */,
@@ -246,6 +249,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF250BA11838125C0003C35E /* car-icon.png in Resources */,
 				BF250B741837D7A10003C35E /* Images.xcassets in Resources */,
 				BF250B661837D7A10003C35E /* InfoPlist.strings in Resources */,
 				BF250B991837EBE70003C35E /* spotView.xib in Resources */,
