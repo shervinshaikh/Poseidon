@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6484FD241838114500B9FD2E /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6484FD231838114500B9FD2E /* SignUpViewController.m */; };
+		6484FD271838120600B9FD2E /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6484FD261838120600B9FD2E /* SignInViewController.m */; };
 		BF250B5C1837D7A10003C35E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF250B5B1837D7A10003C35E /* Foundation.framework */; };
 		BF250B5E1837D7A10003C35E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF250B5D1837D7A10003C35E /* CoreGraphics.framework */; };
 		BF250B601837D7A10003C35E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF250B5F1837D7A10003C35E /* UIKit.framework */; };
@@ -36,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6484FD221838114500B9FD2E /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		6484FD231838114500B9FD2E /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		6484FD251838120600B9FD2E /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
+		6484FD261838120600B9FD2E /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
 		BF250B581837D7A10003C35E /* Poseidon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Poseidon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF250B5B1837D7A10003C35E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BF250B5D1837D7A10003C35E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -122,10 +128,14 @@
 				BF250B6A1837D7A10003C35E /* ParkAppDelegate.h */,
 				BF250B6B1837D7A10003C35E /* ParkAppDelegate.m */,
 				BF250B6D1837D7A10003C35E /* Main.storyboard */,
+				6484FD251838120600B9FD2E /* SignInViewController.h */,
+				6484FD261838120600B9FD2E /* SignInViewController.m */,
 				BF250B921837DB690003C35E /* parkingSpot.h */,
 				BF250B931837DB690003C35E /* parkingSpot.m */,
 				BF250B701837D7A10003C35E /* ParkViewController.h */,
 				BF250B711837D7A10003C35E /* ParkViewController.m */,
+				6484FD221838114500B9FD2E /* SignUpViewController.h */,
+				6484FD231838114500B9FD2E /* SignUpViewController.m */,
 				BF250B731837D7A10003C35E /* Images.xcassets */,
 				BF250B621837D7A10003C35E /* Supporting Files */,
 			);
@@ -260,8 +270,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF250B6C1837D7A10003C35E /* ParkAppDelegate.m in Sources */,
+				6484FD241838114500B9FD2E /* SignUpViewController.m in Sources */,
 				BF250B681837D7A10003C35E /* main.m in Sources */,
 				BF250B941837DB690003C35E /* parkingSpot.m in Sources */,
+				6484FD271838120600B9FD2E /* SignInViewController.m in Sources */,
 				BF250B721837D7A10003C35E /* ParkViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,6 +483,7 @@
 				BF250B8C1837D7A10003C35E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BF250B8D1837D7A10003C35E /* Build configuration list for PBXNativeTarget "PoseidonTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +492,7 @@
 				BF250B8F1837D7A10003C35E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
