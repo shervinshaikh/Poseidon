@@ -68,7 +68,7 @@
     [self.mapView setRegion:viewRegion animated:YES];
 }
 
-- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id)annotation
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation
 {
     if([annotation isKindOfClass:[MKUserLocation class]])
         return nil;
@@ -81,38 +81,37 @@
         annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation
                                                          reuseIdentifier:identifier];
         // To use an image for the pin:
-        // annotationView.image = [UIImage imageNamed:@"pin.png"];
-        annotationView.pinColor = MKPinAnnotationColorRed;
-        annotationView.animatesDrop = YES;
-        // annotationView.canShowCallout = YES;
+        annotationView.image = [UIImage imageNamed:@"car-icon.png"];
+//        annotationView.pinColor = MKPinAnnotationColorRed;
+//        annotationView.animatesDrop = YES;
+        annotationView.canShowCallout = YES;
     } else {
         annotationView.annotation = annotation;
     }
     
-    // annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+    annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
     return annotationView;
 }
 
-- (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view
-{
-    if(![view.annotation isKindOfClass:[MKUserLocation class]]) {
-        SpotView *spotView = (SpotView *)[[[NSBundle mainBundle] loadNibNamed:@"spotView"
-                                                                        owner:self
-                                                                      options:nil] objectAtIndex:0];
-        CGRect spotViewFrame = spotView.frame;
-        spotViewFrame.origin = CGPointMake(-spotViewFrame.size.width/2 + 15, -spotViewFrame.size.height);
-        spotView.frame = spotViewFrame;
-        [spotView.spotLabel setText:[(parkingSpot*)[view annotation] title]];
-        [view addSubview:spotView];
-    }
-    
-}
+//- (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view
+//{
+//    if(![view.annotation isKindOfClass:[MKUserLocation class]]) {
+//        SpotView *spotView = (SpotView *)[[[NSBundle mainBundle] loadNibNamed:@"spotView"
+//                                                                        owner:self
+//                                                                      options:nil] objectAtIndex:0];
+//        CGRect spotViewFrame = spotView.frame;
+//        spotViewFrame.origin = CGPointMake(-spotViewFrame.size.width/2 + 15, -spotViewFrame.size.height);
+//        spotView.frame = spotViewFrame;
+//        [spotView.spotLabel setText:[(parkingSpot*)[view annotation] title]];
+//        [view addSubview:spotView];
+//    }
+//    
+//}
 
-//12
--(void)mapView:(MKMapView *)mapView didDeselectAnnotationView:(MKAnnotationView *)view {
-    for (UIView *subview in view.subviews ){
-        [subview removeFromSuperview];
-    }
-}
+//-(void)mapView:(MKMapView *)mapView didDeselectAnnotationView:(MKAnnotationView *)view {
+//    for (UIView *subview in view.subviews ){
+//        [subview removeFromSuperview];
+//    }
+//}
 
 @end
