@@ -10,7 +10,7 @@
 #import <MapKit/MapKit.h>
 
 @interface parkingSpot : NSObject <MKAnnotation>
-@property (strong, nonatomic) NSString *title;
+//@property (nonatomic) NSString *title;
 @property (nonatomic, assign) CLLocationCoordinate2D coordinate;
 
 -(id) initWithCoordinate:(CLLocationCoordinate2D)coordinate title:(NSString *)title;

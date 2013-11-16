@@ -14,7 +14,7 @@
     if ((self = [super init]))
     {
         self.coordinate = coordinate;
-        self.title = title;
+       // self.title = title;
     }
     return self;
 }
