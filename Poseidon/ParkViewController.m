@@ -8,6 +8,7 @@
 
 #import "ParkViewController.h"
 #import "parkingSpot.h"
+#import "SpotView.h"
 
 #define METERS_PER_MILE 1609.344
 
@@ -77,16 +78,41 @@
     
     if (!annotationView)
     {
-        annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier];
+        annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation
+                                                         reuseIdentifier:identifier];
+        // To use an image for the pin:
+        // annotationView.image = [UIImage imageNamed:@"pin.png"];
         annotationView.pinColor = MKPinAnnotationColorRed;
         annotationView.animatesDrop = YES;
-        annotationView.canShowCallout = YES;
+        // annotationView.canShowCallout = YES;
     } else {
         annotationView.annotation = annotation;
     }
     
-    annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+    // annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
     return annotationView;
+}
+
+- (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view
+{
+    if(![view.annotation isKindOfClass:[MKUserLocation class]]) {
+        SpotView *spotView = (SpotView *)[[[NSBundle mainBundle] loadNibNamed:@"spotView"
+                                                                        owner:self
+                                                                      options:nil] objectAtIndex:0];
+        CGRect spotViewFrame = spotView.frame;
+        spotViewFrame.origin = CGPointMake(-spotViewFrame.size.width/2 + 15, -spotViewFrame.size.height);
+        spotView.frame = spotViewFrame;
+        [spotView.spotLabel setText:[(parkingSpot*)[view annotation] title]];
+        [view addSubview:spotView];
+    }
+    
+}
+
+//12
+-(void)mapView:(MKMapView *)mapView didDeselectAnnotationView:(MKAnnotationView *)view {
+    for (UIView *subview in view.subviews ){
+        [subview removeFromSuperview];
+    }
 }
 
 @end
