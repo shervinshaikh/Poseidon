@@ -23,6 +23,8 @@
 		BF250B871837D7A10003C35E /* PoseidonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF250B861837D7A10003C35E /* PoseidonTests.m */; };
 		BF250B911837D7C40003C35E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF250B901837D7C40003C35E /* MapKit.framework */; };
 		BF250B941837DB690003C35E /* parkingSpot.m in Sources */ = {isa = PBXBuildFile; fileRef = BF250B931837DB690003C35E /* parkingSpot.m */; };
+		BF250B971837EB710003C35E /* SpotView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF250B961837EB710003C35E /* SpotView.m */; };
+		BF250B991837EBE70003C35E /* spotView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF250B981837EBE70003C35E /* spotView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,9 @@
 		BF250B901837D7C40003C35E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		BF250B921837DB690003C35E /* parkingSpot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parkingSpot.h; sourceTree = "<group>"; };
 		BF250B931837DB690003C35E /* parkingSpot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = parkingSpot.m; sourceTree = "<group>"; };
+		BF250B951837EB710003C35E /* SpotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpotView.h; sourceTree = "<group>"; };
+		BF250B961837EB710003C35E /* SpotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpotView.m; sourceTree = "<group>"; };
+		BF250B981837EBE70003C35E /* spotView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = spotView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +133,9 @@
 				BF250B711837D7A10003C35E /* ParkViewController.m */,
 				BF250B731837D7A10003C35E /* Images.xcassets */,
 				BF250B621837D7A10003C35E /* Supporting Files */,
+				BF250B951837EB710003C35E /* SpotView.h */,
+				BF250B961837EB710003C35E /* SpotView.m */,
+				BF250B981837EBE70003C35E /* spotView.xib */,
 			);
 			path = Poseidon;
 			sourceTree = "<group>";
@@ -240,6 +248,7 @@
 			files = (
 				BF250B741837D7A10003C35E /* Images.xcassets in Resources */,
 				BF250B661837D7A10003C35E /* InfoPlist.strings in Resources */,
+				BF250B991837EBE70003C35E /* spotView.xib in Resources */,
 				BF250B6F1837D7A10003C35E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +270,7 @@
 			files = (
 				BF250B6C1837D7A10003C35E /* ParkAppDelegate.m in Sources */,
 				BF250B681837D7A10003C35E /* main.m in Sources */,
+				BF250B971837EB710003C35E /* SpotView.m in Sources */,
 				BF250B941837DB690003C35E /* parkingSpot.m in Sources */,
 				BF250B721837D7A10003C35E /* ParkViewController.m in Sources */,
 			);
