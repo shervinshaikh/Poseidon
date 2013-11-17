@@ -83,8 +83,6 @@
                                                          reuseIdentifier:identifier];
         // To use an image for the pin:
         annotationView.image = [UIImage imageNamed:@"car-icon.png"];
-//        annotationView.pinColor = MKPinAnnotationColorRed;
-//        annotationView.animatesDrop = YES;
         annotationView.canShowCallout = YES;
     } else {
         annotationView.annotation = annotation;
@@ -99,20 +97,21 @@
     annotationView.leftCalloutAccessoryView.backgroundColor = [UIColor colorWithRed:106.0/255.0 green:226.0/255.0 blue:102.0/255.0 alpha:1.0];
     
     UIButton *information = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
-    [information addTarget:self
-                    action:@selector(detailLocation)
-          forControlEvents:UIControlEventTouchUpInside];
+//    [information addTarget:self
+//                    action:@selector(detailLocation)
+//          forControlEvents:UIControlEventTouchUpInside];
     annotationView.rightCalloutAccessoryView = information;
     return annotationView;
 }
 
 
-- (void) detailLocation
+- (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control
 {
     DetailViewController *dvc = [self.storyboard instantiateViewControllerWithIdentifier:@"DetailViewController"];
-//    dvc.labelOutlet.text = @"SOME ADDRESS";
+//    NSLog(view.annotation);
     [self.navigationController setNavigationBarHidden:NO];
     [self.navigationController pushViewController:dvc animated:YES];
+
 }
 
 //-(void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)controlindexPath {
