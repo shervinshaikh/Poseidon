@@ -337,7 +337,7 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMG_1199.PNG" translatesAutoresizingMaskIntoConstraints="NO" id="Sga-LV-dfs">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="map.png" translatesAutoresizingMaskIntoConstraints="NO" id="Sga-LV-dfs">
                                 <rect key="frame" x="40" y="165" width="255" height="237"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -645,9 +645,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="IMG_1199.PNG" width="640" height="1136"/>
         <image name="driveway2.png" width="1270" height="1270"/>
         <image name="logo.png" width="1074" height="395"/>
+        <image name="map.png" width="640" height="1136"/>
     </resources>
     <color key="tintColor" red="1" green="0.80132189529999998" blue="0.18887548830000001" alpha="1" colorSpace="calibratedRGB"/>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
