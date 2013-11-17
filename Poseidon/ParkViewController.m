@@ -39,7 +39,7 @@
     coordinate2.latitude = 34.423514;
     coordinate2.longitude = -119.701788;
     parkingSpot *spot2 = [[parkingSpot alloc] initWithCoordinate:coordinate2
-                                                           title:@"$28"
+                                                           title:@"$3"
                                                        thumbnail:@"car-icon2.png"];
     [self.mapView addAnnotation:spot2];
     
