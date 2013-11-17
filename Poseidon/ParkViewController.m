@@ -31,21 +31,21 @@
     coordinate1.latitude = 34.420200;
     coordinate1.longitude = -119.700000;
     parkingSpot *spot = [[parkingSpot alloc] initWithCoordinate:coordinate1
-                                                          title:@"$50 | 0.2 mi"];
+                                                          title:@"$50"];
     [self.mapView addAnnotation:spot];
     
     CLLocationCoordinate2D coordinate2;
     coordinate2.latitude = 34.423514;
     coordinate2.longitude = -119.701788;
     parkingSpot *spot2 = [[parkingSpot alloc] initWithCoordinate:coordinate2
-                                                           title:@"$28 | .5 mi"];
+                                                           title:@"$28"];
     [self.mapView addAnnotation:spot2];
     
     CLLocationCoordinate2D coordinate3;
     coordinate3.latitude = 34.417814;
     coordinate3.longitude = -119.699188;
     parkingSpot *spot3 = [[parkingSpot alloc] initWithCoordinate:coordinate3
-                                                           title:@"$34 | 0.3 mi"];
+                                                           title:@"$34"];
     [self.mapView addAnnotation:spot3];
 }
 
@@ -65,6 +65,7 @@
     
     MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(zoomLocation, 0.8*METERS_PER_MILE, 0.8*METERS_PER_MILE);
     
+    [self.navigationController setNavigationBarHidden:YES];
     [self.mapView setRegion:viewRegion animated:YES];
 }
 
@@ -97,9 +98,33 @@
     
     annotationView.leftCalloutAccessoryView.backgroundColor = [UIColor colorWithRed:106.0/255.0 green:226.0/255.0 blue:102.0/255.0 alpha:1.0];
     
-    annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+    UIButton *information = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+    [information addTarget:self
+                    action:@selector(detailLocation)
+          forControlEvents:UIControlEventTouchUpInside];
+    annotationView.rightCalloutAccessoryView = information;
     return annotationView;
 }
+
+
+- (void) detailLocation
+{
+    DetailViewController *dvc = [self.storyboard instantiateViewControllerWithIdentifier:@"DetailViewController"];
+//    dvc.labelOutlet.text = @"SOME ADDRESS";
+    [self.navigationController setNavigationBarHidden:NO];
+    [self.navigationController pushViewController:dvc animated:YES];
+}
+
+//-(void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)controlindexPath {
+////    DetailVC *dvc = [self.storyboard instantiateViewControllerWithIdentifier:@"DetailViewController"];
+////    dvc.address = [self.tweetsArray objectAtIndex:indexPath.row];
+////    [self.navigationController pushViewController:dvc animated:YES];
+//    NSLog(@"clicked");
+//    DetailViewController *dvc = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
+//     dvc.title = view.annotation.title;
+//     dvc.address = view.annotation.subtitle;
+////     [self ParkViewController:dvc animated:YES];
+//}
 
 //- (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view
 //{
