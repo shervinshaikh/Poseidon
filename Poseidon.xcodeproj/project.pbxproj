@@ -31,6 +31,7 @@
 		BF4C94C31839395900C7564A /* car-icon3.png in Resources */ = {isa = PBXBuildFile; fileRef = BF4C94C11839395900C7564A /* car-icon3.png */; };
 		BF4C94C41839395900C7564A /* car-icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = BF4C94C21839395900C7564A /* car-icon2.png */; };
 		BF4C94C6183940AC00C7564A /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = BF4C94C5183940AC00C7564A /* logo.png */; };
+		BF4C94C8183949C200C7564A /* driveway2.png in Resources */ = {isa = PBXBuildFile; fileRef = BF4C94C7183949C200C7564A /* driveway2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		BF4C94C11839395900C7564A /* car-icon3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car-icon3.png"; sourceTree = "<group>"; };
 		BF4C94C21839395900C7564A /* car-icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car-icon2.png"; sourceTree = "<group>"; };
 		BF4C94C5183940AC00C7564A /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		BF4C94C7183949C200C7564A /* driveway2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = driveway2.png; path = ../driveway2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 		BF250B621837D7A10003C35E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BF4C94C7183949C200C7564A /* driveway2.png */,
 				BF4C94C5183940AC00C7564A /* logo.png */,
 				BF4C94C11839395900C7564A /* car-icon3.png */,
 				BF4C94C21839395900C7564A /* car-icon2.png */,
@@ -269,6 +272,7 @@
 				BF4C94C31839395900C7564A /* car-icon3.png in Resources */,
 				BF250BA11838125C0003C35E /* car-icon.png in Resources */,
 				BF4C94C6183940AC00C7564A /* logo.png in Resources */,
+				BF4C94C8183949C200C7564A /* driveway2.png in Resources */,
 				BF250B741837D7A10003C35E /* Images.xcassets in Resources */,
 				BF250B661837D7A10003C35E /* InfoPlist.strings in Resources */,
 				BF250B991837EBE70003C35E /* spotView.xib in Resources */,
