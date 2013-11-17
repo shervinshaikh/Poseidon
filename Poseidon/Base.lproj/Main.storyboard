@@ -71,27 +71,32 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F22-9n-R1Q">
-                                <rect key="frame" x="121" y="306" width="57" height="30"/>
+                                <rect key="frame" x="75" y="376" width="166" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.86009680710000003" green="0.15565728149999999" blue="0.1269723495" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Register">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.86009680706521741" green="0.15565728146986332" blue="0.1269723494619405" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="giV-hx-THW" kind="modal" id="YhU-Kh-lcH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Fo-1s-dMI">
-                                <rect key="frame" x="121" y="166" width="47" height="30"/>
+                                <rect key="frame" x="75" y="166" width="161" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.84440811819999995" green="0.15429216970000001" blue="0.1244179423" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Sign in">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.03057608107" green="0.071246603259999999" blue="0.038457150990000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.84440811820652173" green="0.15429216971965026" blue="0.12441794228157285" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="6n5-vc-nv5" kind="modal" id="eCP-Dg-UeE"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.34392624679162398" green="0.80139690896739135" blue="0.43257419330372959" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wAI-Th-5Zt" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -141,9 +146,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIE-aS-1VP">
-                                <rect key="frame" x="141" y="341" width="38" height="30"/>
+                                <rect key="frame" x="95" y="356" width="130" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.86009680710000003" green="0.15565728149999999" blue="0.1269723495" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.03057608107" green="0.071246603259999999" blue="0.038457150990000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -151,7 +158,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.32722825810168094" green="0.76537024456521741" blue="0.43389756976767452" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="387-lZ-YpV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -261,9 +268,12 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PA5-gM-qiY">
-                                <rect key="frame" x="112" y="514" width="68" height="42"/>
+                                <rect key="frame" x="89" y="516" width="143" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.84440811819999995" green="0.15429216970000001" blue="0.1244179423" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.86009680710000003" green="0.15565728149999999" blue="0.1269723495" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Finish">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -271,7 +281,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.34049144865020448" green="0.79339334239130432" blue="0.42825406638975816" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ATT-sa-yFj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -297,7 +307,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.34063722257663082" green="0.79373301630434789" blue="0.42843741395109386" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lih-I3-NlV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -391,6 +401,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="BOQ-rz-jO4"/>
+        <segue reference="V0L-0R-gsp"/>
     </inferredMetricsTieBreakers>
 </document>
