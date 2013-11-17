@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6452346D1839878600474FB8 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 6452346C1839878600474FB8 /* map.png */; };
+		6452346F1839886800474FB8 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 6452346E1839886800474FB8 /* map.png */; };
 		BF250B5C1837D7A10003C35E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF250B5B1837D7A10003C35E /* Foundation.framework */; };
 		BF250B5E1837D7A10003C35E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF250B5D1837D7A10003C35E /* CoreGraphics.framework */; };
 		BF250B601837D7A10003C35E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF250B5F1837D7A10003C35E /* UIKit.framework */; };
@@ -46,7 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6452346C1839878600474FB8 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = map.png; path = ../../map.png; sourceTree = "<group>"; };
+		6452346E1839886800474FB8 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = map.png; path = ../map.png; sourceTree = "<group>"; };
 		BF250B581837D7A10003C35E /* Poseidon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Poseidon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF250B5B1837D7A10003C35E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BF250B5D1837D7A10003C35E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -162,7 +162,7 @@
 		BF250B621837D7A10003C35E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6452346C1839878600474FB8 /* map.png */,
+				6452346E1839886800474FB8 /* map.png */,
 				BF4C94C7183949C200C7564A /* driveway2.png */,
 				BF4C94C5183940AC00C7564A /* logo.png */,
 				BF4C94C11839395900C7564A /* car-icon3.png */,
@@ -277,7 +277,7 @@
 				BF4C94C6183940AC00C7564A /* logo.png in Resources */,
 				BF4C94C8183949C200C7564A /* driveway2.png in Resources */,
 				BF250B741837D7A10003C35E /* Images.xcassets in Resources */,
-				6452346D1839878600474FB8 /* map.png in Resources */,
+				6452346F1839886800474FB8 /* map.png in Resources */,
 				BF250B661837D7A10003C35E /* InfoPlist.strings in Resources */,
 				BF250B991837EBE70003C35E /* spotView.xib in Resources */,
 				BF250BA6183858CB0003C35E /* driveway.jpg in Resources */,
