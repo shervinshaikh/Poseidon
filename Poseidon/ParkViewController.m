@@ -85,8 +85,7 @@
         annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation
                                                          reuseIdentifier:identifier];
         // To use an image for the pin:
-        annotationView.image = [UIImage imageNamed:((parkingSpot *)annotation).thumbnail];//[UIImage imageNamed:@"car-icon3.png"];
-//        annotationView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@", annotation.thumbnail]];
+        annotationView.image = [UIImage imageNamed:((parkingSpot *)annotation).thumbnail];
         annotationView.canShowCallout = YES;
     } else {
         annotationView.annotation = annotation;
@@ -101,9 +100,6 @@
     annotationView.leftCalloutAccessoryView.backgroundColor = [UIColor colorWithRed:106.0/255.0 green:226.0/255.0 blue:102.0/255.0 alpha:1.0];
     
     UIButton *information = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
-//    [information addTarget:self
-//                    action:@selector(detailLocation)
-//          forControlEvents:UIControlEventTouchUpInside];
     annotationView.rightCalloutAccessoryView = information;
     return annotationView;
 }
