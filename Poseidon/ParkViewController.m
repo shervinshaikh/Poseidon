@@ -89,6 +89,14 @@
         annotationView.annotation = annotation;
     }
     
+    annotationView.leftCalloutAccessoryView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
+    UILabel *distanceText = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, 40, 40)];
+    distanceText.text = @"1 mi";
+    [distanceText setFont:[UIFont fontWithName: @"Trebuchet MS" size: 16.0f]];
+    [annotationView.leftCalloutAccessoryView addSubview:distanceText];
+    
+    annotationView.leftCalloutAccessoryView.backgroundColor = [UIColor colorWithRed:106.0/255.0 green:226.0/255.0 blue:102.0/255.0 alpha:1.0];
+    
     annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
     return annotationView;
 }
