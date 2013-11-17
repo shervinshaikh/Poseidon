@@ -10,12 +10,13 @@
 
 @implementation parkingSpot
 
--(id) initWithCoordinate:(CLLocationCoordinate2D)coordinate title:(NSString *)title
+-(id) initWithCoordinate:(CLLocationCoordinate2D)coordinate title:(NSString *)title thumbnail:(NSString *)thumbnail
 {
     if ((self = [super init]))
     {
         self.coordinate = coordinate;
         self.title = title;
+        self.thumbnail = thumbnail;
     }
     return self;
 }

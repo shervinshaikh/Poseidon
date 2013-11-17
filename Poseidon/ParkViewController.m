@@ -31,21 +31,24 @@
     coordinate1.latitude = 34.420200;
     coordinate1.longitude = -119.700000;
     parkingSpot *spot = [[parkingSpot alloc] initWithCoordinate:coordinate1
-                                                          title:@"$50"];
+                                                          title:@"$50"
+                                                      thumbnail:@"car-icon3.png"];
     [self.mapView addAnnotation:spot];
     
     CLLocationCoordinate2D coordinate2;
     coordinate2.latitude = 34.423514;
     coordinate2.longitude = -119.701788;
     parkingSpot *spot2 = [[parkingSpot alloc] initWithCoordinate:coordinate2
-                                                           title:@"$28"];
+                                                           title:@"$28"
+                                                       thumbnail:@"car-icon2.png"];
     [self.mapView addAnnotation:spot2];
     
     CLLocationCoordinate2D coordinate3;
     coordinate3.latitude = 34.417814;
     coordinate3.longitude = -119.699188;
     parkingSpot *spot3 = [[parkingSpot alloc] initWithCoordinate:coordinate3
-                                                           title:@"$34"];
+                                                           title:@"$34"
+                                                       thumbnail:@"car-icon2.png"];
     [self.mapView addAnnotation:spot3];
 }
 
@@ -75,14 +78,15 @@
         return nil;
     
     static NSString *identifier = @"myAnnotation";
-    MKPinAnnotationView * annotationView = (MKPinAnnotationView*)[self.mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
+    MKAnnotationView * annotationView = (MKAnnotationView*)[self.mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
     
     if (!annotationView)
     {
         annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation
                                                          reuseIdentifier:identifier];
         // To use an image for the pin:
-        annotationView.image = [UIImage imageNamed:@"car-icon.png"];
+        annotationView.image = [UIImage imageNamed:((parkingSpot *)annotation).thumbnail];//[UIImage imageNamed:@"car-icon3.png"];
+//        annotationView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@", annotation.thumbnail]];
         annotationView.canShowCallout = YES;
     } else {
         annotationView.annotation = annotation;

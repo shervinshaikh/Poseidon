@@ -11,7 +11,8 @@
 
 @interface parkingSpot : NSObject <MKAnnotation>
 @property (nonatomic, strong) NSString *title;
+@property (nonatomic, strong) NSString *thumbnail;
 @property (nonatomic, assign) CLLocationCoordinate2D coordinate;
 
--(id) initWithCoordinate:(CLLocationCoordinate2D)coordinate title:(NSString *)title;
+-(id) initWithCoordinate:(CLLocationCoordinate2D)coordinate title:(NSString *)title thumbnail:(NSString *)thumbnail;
 @end

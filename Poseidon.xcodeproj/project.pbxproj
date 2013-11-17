@@ -28,6 +28,8 @@
 		BF250BA11838125C0003C35E /* car-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BF250BA01838125C0003C35E /* car-icon.png */; };
 		BF250BA418384D690003C35E /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF250BA318384D690003C35E /* DetailViewController.m */; };
 		BF250BA6183858CB0003C35E /* driveway.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BF250BA5183858CB0003C35E /* driveway.jpg */; };
+		BF4C94C31839395900C7564A /* car-icon3.png in Resources */ = {isa = PBXBuildFile; fileRef = BF4C94C11839395900C7564A /* car-icon3.png */; };
+		BF4C94C41839395900C7564A /* car-icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = BF4C94C21839395900C7564A /* car-icon2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		BF250BA218384D690003C35E /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		BF250BA318384D690003C35E /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		BF250BA5183858CB0003C35E /* driveway.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = driveway.jpg; sourceTree = "<group>"; };
+		BF4C94C11839395900C7564A /* car-icon3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car-icon3.png"; sourceTree = "<group>"; };
+		BF4C94C21839395900C7564A /* car-icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "car-icon2.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +156,8 @@
 		BF250B621837D7A10003C35E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BF4C94C11839395900C7564A /* car-icon3.png */,
+				BF4C94C21839395900C7564A /* car-icon2.png */,
 				BF250BA5183858CB0003C35E /* driveway.jpg */,
 				BF250BA01838125C0003C35E /* car-icon.png */,
 				BF250B631837D7A10003C35E /* Poseidon-Info.plist */,
@@ -257,11 +263,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF4C94C31839395900C7564A /* car-icon3.png in Resources */,
 				BF250BA11838125C0003C35E /* car-icon.png in Resources */,
 				BF250B741837D7A10003C35E /* Images.xcassets in Resources */,
 				BF250B661837D7A10003C35E /* InfoPlist.strings in Resources */,
 				BF250B991837EBE70003C35E /* spotView.xib in Resources */,
 				BF250BA6183858CB0003C35E /* driveway.jpg in Resources */,
+				BF4C94C41839395900C7564A /* car-icon2.png in Resources */,
 				BF250B6F1837D7A10003C35E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
