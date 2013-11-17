@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>5892E11A-8EE3-475F-993B-CA12265A7BEE</string>
+	<string>90E5034A-AD0E-4002-9C42-0830F3483A15</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Poseidon</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>EB1689C5-44D8-4E3C-9702-6C6199343D95</key>
-		<string>https://github.com/shervinshaikh/Poseidon</string>
+		<key>9AC0940C-1F32-4236-9B6B-ADCBB2A19C0F</key>
+		<string>https://github.com/shervinshaikh/Poseidon.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Poseidon.xcodeproj/project.xcworkspace</string>
+	<string>Poseidon/Poseidon/Poseidon.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>EB1689C5-44D8-4E3C-9702-6C6199343D95</key>
-		<string>../..</string>
+		<key>9AC0940C-1F32-4236-9B6B-ADCBB2A19C0F</key>
+		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/shervinshaikh/Poseidon</string>
+	<string>https://github.com/shervinshaikh/Poseidon.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>EB1689C5-44D8-4E3C-9702-6C6199343D95</string>
+	<string>9AC0940C-1F32-4236-9B6B-ADCBB2A19C0F</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>EB1689C5-44D8-4E3C-9702-6C6199343D95</string>
+			<string>9AC0940C-1F32-4236-9B6B-ADCBB2A19C0F</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Poseidon</string>
 		</dict>
